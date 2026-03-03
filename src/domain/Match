@@ -1,0 +1,10 @@
+import { Hono } from 'hono'
+
+export const app2 = new Hono();
+
+app2.get('/', (c) => {
+  return c.json({
+    success: true,
+    message: "World Cup Ticketing API"
+  })
+})
